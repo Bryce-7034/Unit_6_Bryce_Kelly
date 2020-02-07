@@ -11,9 +11,9 @@ public class Album {
     }
     public String toString(){
         String result;
-        result=title+ " ";
-        result+=artist+ " ";
-        result+=tracks+ " ";
+        result=title+ ", ";
+        result+=artist+ ", ";
+        result+=tracks+ ", ";
         result+=time+ "\n";
         return result;
     }
