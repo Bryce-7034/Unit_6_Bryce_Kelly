@@ -9,6 +9,18 @@ public class Album {
         this.tracks = tracks;
         this.time = time;
     }
+    public String getTitle(){
+        return title;
+    }
+    public String getArtist(){
+        return artist;
+    }
+    public int getTracks(){
+        return tracks;
+    }
+    public double getTime(){
+        return time;
+    }
     public String toString(){
         String result;
         result=title+ ", ";
