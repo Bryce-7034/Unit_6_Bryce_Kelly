@@ -16,11 +16,4 @@ public class Deck {
     public void shuffle(){
         Collections.shuffle(egg);
     }
-
-    public static void main(String [] args){
-        Deck egg = new Deck();
-        System.out.println(egg.getDeck());
-        egg.shuffle();
-        System.out.println(egg.getDeck());
-    }
 }
