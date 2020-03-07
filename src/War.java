@@ -25,5 +25,6 @@ public class War {
             System.out.println(p2);
         }
         System.out.println(p1.getHand().size()>0?("Player 1, You Win: You get EGG"):p2.getHand().size()>0?("Player 2, You Win: You get WEG"):("ERROR"));
+        System.out.println(round>=100 ? "This is why War is a bad game": "You are the 1/100 person to get a game under 100 rounds");
     }
 }

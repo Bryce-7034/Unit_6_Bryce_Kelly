@@ -24,4 +24,56 @@ public class Array2DExplorer {
         }
         return maxArr;
     }
+    public int[] allRowSums(int[][] data){
+        int[] sumArr = new int[data.length];
+        for(int[] row:data){
+            int i = 0;
+            int sum = 0;
+            for(int num:row){
+                sum+=num;
+            }
+            sumArr[i]=sum;
+            i++;
+        }
+        return sumArr;
+    }
+    public double[] averageCol(int[][] nums){
+        double[] avgArr = new double[nums.length];
+        for(int[]row:nums){
+            double sum = 0;
+            int i = 0;
+            for(int num: row){
+                sum+=num;
+            }
+            avgArr[i] = sum/nums[i].length;
+            i++;
+        }
+        return avgArr;
+    }
+    public int smallEven(int[][] matrix){
+        int min = 9999999;
+        for(int[]row:matrix){
+            for(int num:row){
+                if(num<min){
+                    min = num;
+                }
+            }
+        }
+        return min;
+    }
+    public int biggestRow(int[][] nums){
+        int[] sums = allRowSums(nums);
+        int big = 0;
+        int index = 0;
+        int i = 0;
+        for(int num: sums){
+            if(num>big){
+                i++;
+                big = num;
+                index = i;
+            }
+        }
+        return index;
+    }
+
 }
